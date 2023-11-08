@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>
+      Scrieți un program JavaScript care verifică dacă două condiții sunt
+      adevărate utilizând operatorul "&&" (și logic) și afișează un mesaj
+      corespunzător în consolă, în funcție de rezultat.
+    </h1>
+
+    <p>
+      The && operator returns true if both expressions are true, otherwise it
+      returns false.
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+      let a = 5;
+      let b = 9;
+
+      document.getElementById("demo").innerHTML =
+        (a < 10 && b > 1) + "<br>" + (a < 10 && b < 1);
+    </script>
+  </body>
+</html>

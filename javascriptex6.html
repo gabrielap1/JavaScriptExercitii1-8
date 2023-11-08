@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>
+      Verifică dacă o variabilă numită "varsta" este mai mare sau egală cu 18 și
+      afișează un mesaj corespunzător în consolă, în funcție de rezultat.
+    </h2>
+    <p>Input your age and click the button:</p>
+
+    <input id="age" value="18" />
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        let voteable;
+        let age = Number(document.getElementById("age").value);
+        if (isNaN(age)) {
+          voteable = "Input is not a number";
+        } else {
+          voteable = (age < 18) ? "Prea tânăr/ă " : "Major/ă";
+        }
+    </script>
+  </body>
+</html>
